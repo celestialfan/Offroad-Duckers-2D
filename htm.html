@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Offroad Duckers 2D</title>
         <style>
-            #maincanvas{background-color: #10c010;}
+            #groundcanvas{background-color: #10c010; position: absolute; width: 100%; height: 100%; overflow: hidden;}
+            #vehiclecanvas{position: absolute; width: 100%; height: 100%; overflow: hidden;}
         </style>
     </head>
     <body>
-        <canvas id="maincanvas" width="100%" height="100%"></canvas>
+        <canvas id="groundcanvas"></canvas>
+        <canvas id="vehiclecanvas"></canvas>
         <script src="offroad.js"></script>
     </body>
 </html>
+<!--background-color: rgba(255, 0, 0, 0.5);-->
